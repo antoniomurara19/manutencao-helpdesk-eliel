@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Atv.HelpDesk</title>
+</head>
+<body>
+    <header>
+        <a class="dff" href="inicio.html">HelpDesk</a>
+      </header>
+  <div class="container">
+    <h2>Abertura de Chamado</h2>
+    <form>
+      
+      <label for="client">Cliente:</label>
+      <input type="text" id="client" name="client" required>
+
+      <label for="system">Sistema:</label>
+      <input type="text" id="system" name="system" required>
+
+      <label for="modulo">Módulo:</label>
+      <input type="text" id="modulo" name="modulo" required>
+      
+      <label for="manutencao-type">Tipo de Manutenção:</label>
+      <select id="manutencao-type" name="manutencao-type" required>
+
+        <option value="">Selecione</option>
+        <option value= "corretiva">Corretiva</option>
+        <option value= "Adaptativa">Adaptativa</option>
+        <option value= "Evolutiva">Evolutiva</option>
+        <option value= "preventiva">preventiva</option>
+
+      </select>
+
+      <label for="tdm">Tempo da Manutenção:</label>
+      <input type="text" id="tdm" name="tdm" required>
+
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
